@@ -1,0 +1,78 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context="dominando.android.textview.MainActivity">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/app_name" />
+
+        <TextView
+            android:id="@+id/txtAutoLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="phone|email|web"
+            android:text="Filipe Ramon
+            \nEmail:filipe.ramon7@gmail.com
+            \nFone:85986229316
+            \nURL:http://github/filiperamon"
+            tools:text="@string/app_name"
+            />
+        <TextView
+            android:id="@+id/txtEllipsize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/app_name"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="Texto bem grande para não caber em apenas duas linhas"
+            android:textSize="28dp"/>
+
+        <TextView
+            android:id="@+id/txtMonospaced"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fonte monospaced"
+            android:textSize="20sp"
+            android:typeface="monospace" />
+
+        <TextView
+            android:id="@+id/txtFonte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="20sp"
+            android:text="Fonte customizada" />
+
+        <TextView
+            android:id="@+id/txtStrike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Text Strike" />
+
+        <TextView
+            android:id="@+id/txtHtml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtSpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:bufferType="spannable" />
+
+    </LinearLayout>
+
+</ScrollView>
