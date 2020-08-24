@@ -25,4 +25,22 @@
         app:layout_constraintTop_toBottomOf="@+id/btnTextView"
         android:text="@string/explorar_o_edittext" />
 
+    <Button
+        android:id="@+id/btnMaterialDesigner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEditText"
+        android:text="@string/explorar_o_material" />
+
+    <Button
+        android:id="@+id/btnComponents"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMaterialDesigner"
+        android:text="@string/components" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

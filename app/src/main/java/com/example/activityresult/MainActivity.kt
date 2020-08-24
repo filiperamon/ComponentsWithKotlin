@@ -21,5 +21,15 @@ class MainActivity : AppCompatActivity() {
             intent = Intent(this, TextViewActivity::class.java)
             startActivity(intent)
         }
+
+        btnMaterialDesigner.setOnClickListener {
+            intent = Intent(this, MaterialDesignerActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnComponents.setOnClickListener {
+            intent = Intent(this, ComponentsActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
