@@ -7,6 +7,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.annotation.StringRes
 import com.example.activityresult.R
 import com.example.activityresult.cap5.ListviewAdapter.Data.Vehicle
@@ -27,15 +29,26 @@ class VehicleAdapter(
 
     override fun getCount(): Int = vehicles.size
 
-    @SuppressLint("ViewHolder")
-    override fun getView(position: Int, p1: View?, parent: ViewGroup?): View {
+    override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
         val vehicle = vehicles[position]
-        val row = LayoutInflater.from(context).inflate(R.layout.item_vehicle, parent, false)
+        val holder: ViewHolder
+        val row: View
 
-        row.imgLogo.setImageDrawable(logos.getDrawable(vehicle.manufacturer))
-        row.txtModel.text = vehicle.model
-        row.txtYear.text = vehicle.year.toString()
-        row.txtGasoline.text = context.getString(getFuel(vehicle))
+        if (convertView == null) {
+            row = LayoutInflater.from(context).inflate(R.layout.item_vehicle, parent, false)
+            holder = ViewHolder(row)
+            //grava o holder na tag
+            row.tag = holder
+        } else {
+            row = convertView
+            //recupera holder da tag
+            holder = convertView.tag as ViewHolder
+        }
+
+        holder.imgLogo.setImageDrawable(logos.getDrawable(vehicle.manufacturer))
+        holder.txtModel.text = vehicle.model
+        holder.txtYear.text = vehicle.year.toString()
+        holder.txtFuel.text = context.getString(getFuel(vehicle))
 
         return row
     }
@@ -43,7 +56,16 @@ class VehicleAdapter(
     @StringRes
     private fun getFuel(vehicle: Vehicle): Int =
         if (vehicle.gasoline && vehicle.ethanol) R.string.fuel_flex
-        else if(vehicle.gasoline) R.string.gasoline
+        else if (vehicle.gasoline) R.string.gasoline
         else if (vehicle.ethanol) R.string.ethanol
         else R.string.fuel_invalid
+
+    companion object {
+        data class ViewHolder(val view: View) {
+            val imgLogo: ImageView = view.imgLogo
+            val txtModel: TextView = view.txtModel
+            val txtYear: TextView = view.txtYear
+            val txtFuel: TextView = view.txtGasoline
+        }
+    }
 }
