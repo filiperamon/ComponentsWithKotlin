@@ -1,8 +1,9 @@
-package com.example.activityresult
+package com.example.activityresult.cap123
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.activityresult.R
 import kotlinx.android.synthetic.main.activity_linkify.*
 
 class ActivityLinkify : AppCompatActivity() {

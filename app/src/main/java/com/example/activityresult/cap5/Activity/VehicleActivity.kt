@@ -1,4 +1,4 @@
-package com.example.activityresult.cap5.ListviewAdapter.Activity
+package com.example.activityresult.cap5.Activity
 
 import android.graphics.Color
 import android.os.Bundle
@@ -7,9 +7,10 @@ import android.widget.ListView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.activityresult.R
-import com.example.activityresult.cap5.ListviewAdapter.Adapter.VehicleAdapter
-import com.example.activityresult.cap5.ListviewAdapter.Data.Vehicle
-import com.example.activityresult.showShortToast
+import com.example.activityresult.cap5.Adapter.VehicleAdapter
+import com.example.activityresult.cap5.Data.Vehicle
+import com.example.activityresult.cap123.showShortToast
+import kotlinx.android.synthetic.main.activity_vehicles.*
 
 class VehicleActivity : AppCompatActivity() {
 
@@ -24,8 +25,9 @@ class VehicleActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val listView = ListView(this)
-        setContentView(listView)
+        setContentView(R.layout.activity_vehicles)
+
+        listView.emptyView = findViewById(android.R.id.empty)
 
         val adapter = VehicleAdapter(this, vehicles)
         listView.adapter = adapter
@@ -37,6 +39,12 @@ class VehicleActivity : AppCompatActivity() {
             if(vehicle != null){
                 val (model, year) = vehicle
                 showShortToast("$model $year")
+
+                vehicles.remove(vehicle)
+                adapter.notifyDataSetChanged()
+                txtFooter.resources.getQuantityString(
+                    R.plurals.footer_text, adapter.count, adapter.count
+                )
             }
 
         }

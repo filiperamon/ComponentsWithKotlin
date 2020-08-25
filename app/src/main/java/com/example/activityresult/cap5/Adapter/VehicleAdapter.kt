@@ -1,6 +1,5 @@
-package com.example.activityresult.cap5.ListviewAdapter.Adapter
+package com.example.activityresult.cap5.Adapter
 
-import android.annotation.SuppressLint
 import android.content.Context
 import android.content.res.TypedArray
 import android.view.LayoutInflater
@@ -11,7 +10,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.annotation.StringRes
 import com.example.activityresult.R
-import com.example.activityresult.cap5.ListviewAdapter.Data.Vehicle
+import com.example.activityresult.cap5.Data.Vehicle
 import kotlinx.android.synthetic.main.item_vehicle.view.*
 
 class VehicleAdapter(

@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".MaterialDesignerActivity">
+    tools:context=".cap4.MaterialDesignerActivity">
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"

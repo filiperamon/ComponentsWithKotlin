@@ -1,4 +1,4 @@
-package com.example.activityresult
+package com.example.activityresult.cap4
 
 import android.annotation.SuppressLint
 import android.graphics.BitmapFactory
@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Html
 import android.text.util.Linkify
+import com.example.activityresult.R
 import kotlinx.android.synthetic.main.activity_text_view.*
 import java.io.IOException
 import java.util.regex.Pattern

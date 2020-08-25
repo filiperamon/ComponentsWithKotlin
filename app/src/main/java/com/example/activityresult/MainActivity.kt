@@ -3,7 +3,11 @@ package com.example.activityresult
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.activityresult.cap5.ListviewAdapter.Activity.VehicleActivity
+import com.example.activityresult.cap123.ComponentsActivity
+import com.example.activityresult.cap4.EditTextActivity
+import com.example.activityresult.cap4.MaterialDesignerActivity
+import com.example.activityresult.cap4.TextViewActivity
+import com.example.activityresult.cap5.Activity.VehicleActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 @Suppress("DEPRECATION")

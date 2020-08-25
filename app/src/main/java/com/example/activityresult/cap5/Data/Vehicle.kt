@@ -1,4 +1,4 @@
-package com.example.activityresult.cap5.ListviewAdapter.Data
+package com.example.activityresult.cap5.Data
 
 data class Vehicle (
     var model:String,
