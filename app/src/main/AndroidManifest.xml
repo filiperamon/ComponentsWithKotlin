@@ -13,6 +13,7 @@
         <activity android:name=".MaterialDesignerActivity" />
         <activity android:name=".TextViewActivity" />
         <activity android:name=".EditTextActivity" />
+        <activity android:name=".cap5.ListviewAdapter.Activity.VehicleActivity" />
         <activity android:name=".ActivityLinkify">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
