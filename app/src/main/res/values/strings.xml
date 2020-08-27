@@ -28,7 +28,7 @@
     <string name="msg_result">%1$s\nProgress:%2$d\nNome:%3$s\nOpção:%4$s</string>
     <string name="o">o</string>
     <string name="components">components</string>
-    
+
     <!-- ListView Adapter -->
     <string name="fuel_flex">Flex</string>
     <string name="gasoline">Gasolina</string>
@@ -37,6 +37,10 @@
     <string name="custon_list_view">ListView Customizada</string>
     <string name="header_text">Carros</string>
     <string name="no_vehicles">Nenhum carro cadastrado</string>
+    <string name="autocomplete_example">AutoComplete Example</string>
+    <string name="recycle">RecycleView</string>
+    <string name="title_message">Title</string>
+    <string name="hindtextmessage">Texto</string>
     <plurals name="footer_text">
         <item quantity="one">1 carro</item>
         <item quantity="other">%d carros</item>

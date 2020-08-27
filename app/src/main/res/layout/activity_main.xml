@@ -52,4 +52,22 @@
         app:layout_constraintTop_toBottomOf="@+id/btnComponents"
         android:text="@string/custon_list_view" />
 
+    <Button
+        android:id="@+id/btnAutoComplete"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCustonListView"
+        android:text="@string/autocomplete_example" />
+
+    <Button
+        android:id="@+id/btnRecycle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAutoComplete"
+        android:text="@string/recycle" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

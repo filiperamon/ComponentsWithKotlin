@@ -7,6 +7,8 @@ import com.example.activityresult.cap123.ComponentsActivity
 import com.example.activityresult.cap4.EditTextActivity
 import com.example.activityresult.cap4.MaterialDesignerActivity
 import com.example.activityresult.cap4.TextViewActivity
+import com.example.activityresult.cap5.Activity.AutoCompleteActivity
+import com.example.activityresult.cap5.Activity.RecycleActivity
 import com.example.activityresult.cap5.Activity.VehicleActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -39,6 +41,16 @@ class MainActivity : AppCompatActivity() {
 
         btnCustonListView.setOnClickListener {
             intent = Intent(this, VehicleActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnAutoComplete.setOnClickListener {
+            intent = Intent(this, AutoCompleteActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnRecycle.setOnClickListener {
+            intent = Intent(this, RecycleActivity::class.java)
             startActivity(intent)
         }
     }

@@ -9,11 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".cap123.ComponentsActivity"></activity>
+        <activity android:name=".cap5.Activity.RecycleActivity"></activity>
+        <activity android:name=".cap5.Activity.AutoCompleteActivity" />
+        <activity android:name=".cap123.ComponentsActivity" />
         <activity android:name=".cap4.MaterialDesignerActivity" />
         <activity android:name=".cap4.TextViewActivity" />
         <activity android:name=".cap4.EditTextActivity" />
-        <activity android:name="com.example.activityresult.cap5.Activity.VehicleActivity" />
+        <activity android:name=".cap5.Activity.VehicleActivity" />
         <activity android:name=".cap123.ActivityLinkify">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
