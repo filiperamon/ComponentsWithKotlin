@@ -1,11 +1,15 @@
 <resources>
 
     <!-- MainActivity -->
+    <plurals name="footer_text">
+        <item quantity="one">1 carro</item>
+        <item quantity="other">%d carros</item>
+    </plurals>
     <string name="app_name">ActivityResult</string>
     <string name="explorar_o_edittext">Explorar o EditText</string>
-    <string name="explorar_o_textview">Explorar o textView</string>
 
     <!-- EditTextActivity -->
+    <string name="explorar_o_textview">Explorar o textView</string>
     <string name="hint_name">Nome</string>
     <string name="hint_email">Email</string>
     <string name="hint_password">Password</string>
@@ -14,9 +18,9 @@
     <string name="hint_error_email">Email inválido</string>
     <string name="hint_error_password">Senha inválida</string>
     <string name="msg_sucess">Usuário %1$s com email %2$s cadastrado com sucesso!</string>
-    <string name="explorar_o_material">Material Designer</string>
 
     <!-- Components Activity -->
+    <string name="explorar_o_material">Material Designer</string>
     <string name="text_on">Ligado</string>
     <string name="text_off">Desligado</string>
     <string name="text_enabled">Habilitado</string>
@@ -27,9 +31,9 @@
     <string name="btn_show_values">Ver Valores</string>
     <string name="msg_result">%1$s\nProgress:%2$d\nNome:%3$s\nOpção:%4$s</string>
     <string name="o">o</string>
-    <string name="components">components</string>
 
     <!-- ListView Adapter -->
+    <string name="components">components</string>
     <string name="fuel_flex">Flex</string>
     <string name="gasoline">Gasolina</string>
     <string name="ethanol">Etanol</string>
@@ -41,9 +45,5 @@
     <string name="recycle">RecycleView</string>
     <string name="title_message">Title</string>
     <string name="hindtextmessage">Texto</string>
-    <plurals name="footer_text">
-        <item quantity="one">1 carro</item>
-        <item quantity="other">%d carros</item>
-    </plurals>
 
 </resources>

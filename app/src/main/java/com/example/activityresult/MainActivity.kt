@@ -8,6 +8,7 @@ import com.example.activityresult.cap4.EditTextActivity
 import com.example.activityresult.cap4.MaterialDesignerActivity
 import com.example.activityresult.cap4.TextViewActivity
 import com.example.activityresult.cap5.Activity.AutoCompleteActivity
+import com.example.activityresult.cap5.Activity.EstilosActivity
 import com.example.activityresult.cap5.Activity.RecycleActivity
 import com.example.activityresult.cap5.Activity.VehicleActivity
 import kotlinx.android.synthetic.main.activity_main.*
@@ -17,7 +18,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        var intent:Intent? = null
+        var intent: Intent? = null
 
         btnEditText.setOnClickListener {
             intent = Intent(this, EditTextActivity::class.java)
@@ -51,6 +52,11 @@ class MainActivity : AppCompatActivity() {
 
         btnRecycle.setOnClickListener {
             intent = Intent(this, RecycleActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnEstilos.setOnClickListener {
+            intent = Intent(this, EstilosActivity::class.java)
             startActivity(intent)
         }
     }

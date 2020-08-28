@@ -5,6 +5,19 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/appRed</item>
+        <item name="buttonStyle">@style/AppButton</item>
     </style>
 
+    <style name="myStyle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/appWhite</item>
+        <item name="android:background">@color/appGreen</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="AppButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/selector_button</item>
+        <item name="android:textColor">@drawable/selector_button_text</item>
+    </style>
 </resources>
